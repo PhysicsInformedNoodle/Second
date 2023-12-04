@@ -13,7 +13,7 @@ def get_mp3_links(url):
 # use it like this
 
 
-url = 'https://www.google.com/' # replace with the URL you want
+url = 'https://www.google.com' # replace with the URL you want
 
 mp3_links = get_mp3_links(url)
 
