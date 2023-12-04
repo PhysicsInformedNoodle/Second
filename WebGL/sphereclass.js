@@ -1,3 +1,4 @@
+var numsides=16;
 class sphere extends CGRAobject{
     constructor(glcontext,radius=0.5){
         super(glcontext); 

@@ -1,4 +1,5 @@
-%%js
+var numsides=16;
+
 class sphereT extends sphere{
     constructor(glcontext,radius=0.5){
         super(glcontext,radius); //# initialize the parent class
