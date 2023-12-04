@@ -1,1 +1,1 @@
-mynumber=42;
+var mynumber=42;
