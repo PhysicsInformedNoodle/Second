@@ -1,9 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+from IPython.display import HTML
 
 # Plot Parameter
-plotting_interval = 4
+frame_interval = 1
+# frames_skipped = 20 #this is hard to program!!!
+total_time = 100
 blit_value = True
 
 # Constants
@@ -60,7 +63,6 @@ for _ in range(num_particles):
     lines.append(line)
 
 # Begins Animation:
-ani = FuncAnimation(fig, update, frames=np.arange(0, 1000, dt), blit=blit_value, interval=plotting_interval)
-
+ani = FuncAnimation(fig, update, frames=np.arange(0, total_time, dt), blit=blit_value, interval=frame_interval)
 
 plt.show()
